@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [NextJS MEDIUM INTEGRATION]
+
+This is a Next.js application that retrieves Medium posts using the Medium API through a custom service file. The project is built with React and uses the `react-query` library for fetching data.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, you will need an API key for the Medium API. Here are the steps to get your API key:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Go to [nocodeapi.com](https://nocodeapi.com) and sign up for an account.
+2. Once you are logged in, navigate to the Medium API page and click on "Connect" to connect your Medium account.
+3. Follow the steps to authenticate your Medium account and obtain an API key.
+4. Copy your API key and store it in a safe place.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To install this project on your local machine, follow these steps:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Clone this repository to your local machine using your preferred method.
+2. Navigate to the root directory of the project.
+3. Create a new file called `.env.local` and add the following lines:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+MEDIUM_USERNAME=your_medium_username
+MEDIUM_API_KEY=your_medium_api_key
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+4. Replace `your_medium_username` with your Medium username and `your_medium_api_key` with your Medium API key.
+5. Run `npm install` to install the dependencies.
+6. Run `npm run dev` to start the development server.
+7. Navigate to `http://localhost:3000` in your web browser to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application consists of two pages: the home page and the article page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The home page displays a list of all the Medium posts retrieved from the Medium API. Each post shows the post title and publication date. Clicking on the "Read more" link takes you to the corresponding article page.
 
-## Deploy on Vercel
+The article page displays the full content of a single Medium post. The article title and publication date are also displayed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions to this project are always welcome! If you would like to contribute, please follow these steps:
+
+1. Fork this repository to your own account.
+2. Clone the repository to your local machine using your preferred method.
+3. Create a new branch for your changes.
+4. Make your changes and commit them with a descriptive commit message.
+5. Push your changes to your forked repository.
+6. Open a pull request to this repository with a description of your changes.
+
+## Contact
+
+If you have any questions or comments about this project, please feel free to contact [Oreanu](mailto:olayemioreanu@gmail.com).
